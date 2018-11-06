@@ -4,6 +4,7 @@
   <ul>
   <li> Download dan extract kalo mau edit</li>
   <li> Selesai di edit langsung extract dan upload lagi ke github</li>
+    <li> Kalo ada perubahan sertakan perubahannya di Issues di tab atas</li>
     <li> Selamat bekerjaa</li>
   </ul>
 </center>
