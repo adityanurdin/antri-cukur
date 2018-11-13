@@ -1,75 +1,66 @@
-<h2>Booking</h2>
+<div class="container">
+<blockquote class="blockquote text-right">
+  <h2 class="mb-0">Pilih Tempat Cukur</h2>
+  <footer class="blockquote-footer">Cari tempat cukur <cite title="Source Title"> langganan kamu</cite></footer>
+</blockquote>
+<p>
+  <a class="btn btn-outline-success btn-lg btn-block" data-toggle="collapse" href="#bekasi" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-map"></i>
+    Bekasi
+  </a>
+</p>
+<div class="collapse" id="bekasi">
+  <div class="card card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Tempat</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Cek</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Nama tempatnya</th>
+            <td>Jalan Kenari / <a href="#">cek maps</a></td>
+            <td>rating</td>
+            <td><button class="btn btn-outline-success">cek tempat</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    Swipe ->
+  </div>
+</div>
 <br>
-  <a href="#demo_bekasi" class="btn btn-primary btn-block" data-toggle="collapse"><i class="fa fa-map-marker"></i> BEKASI</a>
-  <div id="demo_bekasi" class="collapse">
-    <br>
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr class="table-primary">
-          <th>Nama</th>
-          <th>Rate</th>
-          <th>Alamat</th>
-          <th>Detail</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="table-info">
-          <td>Barbershop A</td>
-          <td>bintang 5</td>
-          <td>Jl. jalan</td>
-          <td><a href="#" class="btn btn-primary">Detail info</a></td>
-
-        </tr>
-        <tr class="table-info">
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-          <td><a href="#" class="btn btn-primary">Detail info</a></td>
-        </tr>
-        <tr class="table-info">
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-          <td><a href="#" class="btn btn-primary">Detail info</a></td>
-        </tr>
-      </tbody>
-    </table>
+  <a class="btn btn-outline-warning btn-lg btn-block" data-toggle="collapse" href="#jakarta" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-map"></i>
+    Jakarta
+  </a>
+</p>
+<div class="collapse" id="jakarta">
+  <div class="card card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Tempat</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Cek</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Nama tempatnya</th>
+            <td>Jalan Kenari / <a href="#">cek maps</a></td>
+            <td>rating</td>
+            <td><button class="btn btn-outline-success">cek tempat</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        Swipe ->
   </div>
-  <a href="#demo_jakarta" class="btn btn-primary btn-block" data-toggle="collapse"><i class="fa fa-map-marker"></i> JAKARTA</a>
-  <div id="demo_jakarta" class="collapse">
-    <br>
-  <div class="table-responsive">
-
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr class="table-primary">
-          <th>Nama</th>
-          <th>Rate</th>
-          <th>Alamat</th>
-          <th>Detail</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="table-info">
-          <td>Barbershop A</td>
-          <td>bintang 5</td>
-          <td>Jl. jalan</td>
-          <td><a href="#" class="btn btn-primary">Detail info</a></td>
-
-        </tr>
-        <tr class="table-info">
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-          <td><a href="#" class="btn btn-primary">Detail info</a></td>
-        </tr>
-        <tr class="table-info">
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-          <td><a href="#" class="btn btn-primary">Detail info</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </div>
+</div>
+</div>
