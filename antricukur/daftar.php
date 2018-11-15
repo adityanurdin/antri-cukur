@@ -1,3 +1,4 @@
+<div class="container">
 <form class="needs-validation" novalidate>
   <div class="form-row">
     <div class="col-md-6 mb-3">
@@ -83,7 +84,8 @@
   </div>
   <button class="btn btn-info btn-block" type="submit">Daftar</button>
 </form>
-
+<p>Sudah memiliki akun? <a href="<?= BASE_URL ?>index.php?page=logi">Login</a></p>
+</div>
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
