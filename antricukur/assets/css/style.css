@@ -1,5 +1,8 @@
 body{
-  font-family: Lato;
+  background: url(http://192.168.43.59/ac/assets/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Josefin Sans', sans-serif;
   /* background: #17a2c3; */
   /* background-size: cover; */
 }
