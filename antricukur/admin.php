@@ -81,7 +81,7 @@
 	
 		<form>
   <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tambah">
+    <input type="text" class="form-control" placeholder="Nama">
 
 </div></form>
 
@@ -101,7 +101,7 @@
 		</div>
     </div>
     <div class="col-sm text-right">
-      <a href="" class="btn btn-info">Nama</a>
+      <a href="" class="btn btn-info">Tambah</a>
     </div>
    </div> 
   </div>
