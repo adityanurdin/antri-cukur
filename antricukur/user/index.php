@@ -1,9 +1,10 @@
 <?php
 
-  include_once("function/helper.php"); //helper biar simpel
-  include_once("function/koneksi.php"); //helper biar simpel
+  include_once("../function/helper.php"); //helper biar simpel
+  include_once("../function/koneksi.php"); //helper biar simpel
 
   $page = isset($_GET['page']) ? $_GET['page'] : false;
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -42,7 +43,7 @@
   <body style="margin-top: 50px;">
     <!-- Navigasi Bar -->
     <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
-        <a class="navbar-brand" href="<?= BASE_URL?>"><img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""></a><strong class="text-center text-white">AntriCukur</strong>
+        <a class="navbar-brand" href="<?= BASE_URL?>user"><img src="../assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""></a><strong class="text-center text-white">AntriCukur</strong>
     </nav>
     <!-- Akhir Navigasi bar -->
     <!-- Jumbotron -->
@@ -94,13 +95,13 @@
     <div class="navbar-expand-sm navbar-info bg-info fixed-bottom">
       <div class="row justify-content-center text-center">
         <div class="col">
-        <a href="<?= BASE_URL ?>" class="navbar-brand text-white"><i class="fa fa-home"></i></a>
+        <a href="<?= BASE_URL ?>user/" class="navbar-brand text-white"><i class="fa fa-home"></i></a>
         </div>
         <div class="col">
         <a href="#" class="navbar-brand text-white"><i class="fa fa-book"></i></a>
         </div>
         <div class="col">
-        <a href="<?= BASE_URL ?>index.php?page=login" class="navbar-brand text-white"><i class="fa fa-user"></i></a>
+        <a href="<?= BASE_URL ?>user/index.php?page=user" class="navbar-brand text-white"><i class="fa fa-user"></i></a>
         </div>
       </div>
     </div>

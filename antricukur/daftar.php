@@ -1,9 +1,53 @@
 <div class="container">
-<form class="needs-validation" novalidate>
+  <?php
+    // $notif = isset($_GET['notif']) ? $_GET['notif'] : false;
+    // if ($notif == "success") {
+    //   echo '
+      // <div class="alert alert-info">
+      // <strong>Selamat!</strong> kamu berhasil mendaftar, silahkan login.
+      // </div>
+    //   ';
+    // }elseif ($notif == "failed") {
+    //   echo '
+    //   <div class="alert alert-danger">
+    //   <strong>Oh nooo!</strong> Kamu gagal mendaftar, silahkan coba lagi.
+    //   </div>
+    //   ';
+    // }
+
+    $notif = isset($_GET['notif']) ? $_GET['notif'] : false;
+    $nama = isset($_GET['nama']) ? $_GET['nama'] : false;
+    $email = isset($_GET['email']) ? $_GET['email'] : false;
+    $phone = isset($_GET['phone']) ? $_GET['phone'] : false;
+    $username = isset($_GET['username']) ? $_GET['username'] : false;
+    if ($notif == "require") {
+      echo '<div class="alert alert-danger">
+      <strong>Maaf</strong> kamu harus melengkapi form di bawah.
+      </div>';
+    }elseif ($notif == "email") {
+      echo '
+      <div class="alert alert-danger">
+      <strong>Maaf</strong> Email yang kamu masukan telah digunakan.
+      </div>';
+    }elseif ($notif == "username") {
+      echo '
+      <div class="alert alert-danger">
+      <strong>Maaf</strong> Username yang kamu masukan telah digunakan.
+      </div>';
+    }elseif ($notif == "phone") {
+      echo '
+      <div class="alert alert-danger">
+      <strong>Maaf</strong> Nomer telephone yang kamu masukan telah digunakan.
+      </div>';
+    }
+
+
+  ?>
+<form class="needs-validation" novalidate method="POST" action="<?= BASE_URL?>proses_daftar.php">
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom01">Nama Lengkap</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Nama Lengkap" required>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nama Lengkap" value="<?= $nama ?>" name="nama" required>
       <div class="invalid-feedback">
       	Isi Nama Lengkap
       </div>
@@ -17,42 +61,30 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-envelope"></i></span>
         </div>
-        <input type="text" class="form-control" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+        <input type="email" class="form-control" placeholder="Email" value="<?= $email ?>" name="email" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Isi email anda
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label>Nomer Handphone</label>
+      <div class="input-group">
+        <input type="number" class="form-control" placeholder="Nomer Handphone" value="<?= $phone ?>" name="phone" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Isi Nomer Handphone anda
         </div>
       </div>
     </div>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationCustom03">Kota</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="Kota" required>
-      <div class="invalid-feedback">
-        Masukkan kota anda
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom04">Provinsi</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="Provinsi" required>
-      <div class="invalid-feedback">
-        Masukkan provinsi anda
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Kode Pos</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Kode Pos" required>
-      <div class="invalid-feedback">
-        Masukkan kode pos anda
-      </div>
-    </div>
-    <div class="col-md-6 mb-3">
       <label>Username</label>
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-user-plus"></i></span>
         </div>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+        <input type="text" class="form-control" placeholder="Username" value="<?= $username ?>" name="username" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Isi username anda
         </div>
@@ -64,7 +96,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-lock"></i></span>
         </div>
-        <input type="password" class="form-control" placeholder="Password" aria-describedby="inputGroupPrepend" required>
+        <input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Isi password anda
         </div>
@@ -84,7 +116,7 @@
   </div>
   <button class="btn btn-info btn-block" type="submit">Daftar</button>
 </form>
-<p>Sudah memiliki akun? <a href="<?= BASE_URL ?>index.php?page=logi">Login</a></p>
+<p>Sudah memiliki akun? <a href="<?= BASE_URL ?>index.php?page=login">Login</a></p>
 </div>
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields

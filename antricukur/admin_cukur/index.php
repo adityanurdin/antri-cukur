@@ -1,7 +1,7 @@
 <?php
 
-  include_once("function/helper.php"); //helper biar simpel
-  include_once("function/koneksi.php"); //helper biar simpel
+  include_once("../function/helper.php"); //helper biar simpel
+  include_once("../function/koneksi.php"); //helper biar simpel
 
   $page = isset($_GET['page']) ? $_GET['page'] : false;
 ?>
@@ -42,7 +42,7 @@
   <body style="margin-top: 50px;">
     <!-- Navigasi Bar -->
     <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
-        <a class="navbar-brand" href="<?= BASE_URL?>"><img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""></a><strong class="text-center text-white">AntriCukur</strong>
+        <a class="navbar-brand" href="<?= BASE_URL?>"><img src="../assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""></a><strong class="text-center text-white">AntriCukur</strong>
     </nav>
     <!-- Akhir Navigasi bar -->
     <!-- Jumbotron -->
